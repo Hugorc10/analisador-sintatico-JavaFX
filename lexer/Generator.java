@@ -21,7 +21,7 @@ public class Generator {
         
         String file = rootPath + subPath;
         File sourceCode = new File(file); // abre o arquivo "Lexer.flex"
-        
+        // apenas descomente este codigo se a biblioteca JFlex estiver no projeto
         JFlex.Main.generate(sourceCode); // gera a classe "Lexer.java"
     }
 }
