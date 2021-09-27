@@ -40,6 +40,7 @@ public class ScreenController {
         
         String expr;
         if (ScreenView.textEnter.getText().isEmpty()) {
+            // gera um alerta informando que o campo nao pode estar vazio
             Alert alert = new Alert(Alert.AlertType.WARNING, "A campo nao pode estar vazio.");
             alert.show();
             
