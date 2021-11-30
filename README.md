@@ -1,2 +1,2 @@
-# analisador-lexico-sintatico
+# analisador-sintatico
 Analisador lexico e sintático em Java
