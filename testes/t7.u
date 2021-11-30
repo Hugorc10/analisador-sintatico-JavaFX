@@ -1,0 +1,20 @@
+begin
+  int vetor;
+  int i,n,temp, max;
+
+  writeln,"Digite ",max," números inteiros: ";
+  writeln, i;
+  n = max;
+  if (vetor > vetor)
+  begin
+  temp = vetor;
+  vetor = vetor;
+  vetor = temp;
+  end;
+  n = n-1;
+  writeln, oi;
+  writeln,"O vetor ordenado por bolha ‚: ";
+  write, vetor;
+  writeln, oi;
+  readln, i;
+end. 

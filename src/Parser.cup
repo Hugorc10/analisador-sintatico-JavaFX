@@ -1,0 +1,146 @@
+import java_cup.runtime.Symbol;
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import java.util.ArrayList;
+import java_cup.runtime.*;
+import myparser.LexerCup;
+import ast.*;
+
+parser code
+{:
+	boolean parsing_failed = false;
+	String source_filename;
+
+	public SrcLoc sLoc(java_cup.runtime.Symbol token)
+	{
+		return new SrcLoc(token.left, token.right, source_filename);
+	}
+
+   public parser(Lexer mylexer, String fname)
+   {
+    super(mylexer);
+   	source_filename = fname;
+   }
+
+   public void syntax_error(java_cup.runtime.Symbol cur_token)
+   {
+   	   parsing_failed = true;
+   	   System.err.println("Syntax error " + sLoc(cur_token).toString() + " Got: " + cur_token.toString());
+   }
+
+   public boolean hasFailed() { return parsing_failed;}
+:}
+
+/* Terminais (tokens retornados pelo scanner). */
+terminal	UNDER, PONT, VIRG, PVIR, DPON, APAR, FPAR, ACOL, FCOL;
+terminal	ACHA, FCHA, MAIS, MENOS, ASPA, APOS, BARR, PIPE;
+terminal	EXCL, PERG, MAIOR, MENOR, IGUAL, MULT, DIV;
+terminal	BEGIN, END, BYTE, STRING, WHILE, IF, ELSE, AND, OR, NOT;
+terminal	IGUALI, DIFE, MAIORQ, MENORQ, READLN, WRITE, WRITELN;
+terminal	BOOLEAN, FINAL, INT, IDEN, INTCONS, TIPO;
+
+/* Não-Terminais */
+
+	/********* FILL IN ********/
+non terminal program, decl_var;
+non terminal decls, tipo, vars, expr_log, expr, op_log, decl_if;
+non terminal op_log_num, bloco, cmd, io, atr, calc;
+non terminal decl_con, op_arit, list_exp, decl_while, expr_simples ;
+
+/* A gramática */
+
+//Define derivação raiz
+start with program ;
+
+program ::= {: System.out.println("INICIO"); :} bloco PONT{: System.out.println("FIM"); :}
+;
+
+//Define bloco de código
+bloco ::= BEGIN {: System.out.println("BEGIN BLOCO"); :} decls END {: System.out.println("END BLOCO"); :}
+	| BEGIN {: System.out.println("BEGIN BLOCO"); :} END {: System.out.println("END BLOCO"); :}
+;
+
+//Define derivações do tipo declaração: variáveis, constantes, IF e WHILE
+decls ::= decl_var | decl_con | decl_if | decl_if decls | decl_var decls | decl_con decls
+	| decl_while | decl_while decls | cmd PVIR | cmd PVIR decls ;
+
+//Define derivação de variáveis
+decl_var ::= TIPO vars | PVIR;
+
+//Define derivação de constantes
+decl_con ::= FINAL IDEN IGUAL tipo PVIR;
+
+//Define derivações de identificadores
+vars ::= IDEN PVIR | IDEN VIRG vars
+	| IDEN IGUAL INT PVIR
+	| IDEN IGUAL INT VIRG vars
+	| IDEN IGUAL BOOLEAN PVIR
+	| IDEN IGUAL BOOLEAN VIRG vars
+	| IDEN IGUAL BYTE PVIR
+	| IDEN IGUAL BYTE VIRG vars
+	| IDEN IGUAL STRING PVIR
+	| IDEN IGUAL STRING VIRG vars
+;
+
+//Define valores encontrados
+//tipo ::= BYTE | STRING ;
+
+//Define derivação do IF
+decl_if ::= IF expr_log bloco PVIR {: System.out.println("FIM IF"); :}
+	| IF expr_log bloco ELSE bloco PVIR {: System.out.println("FIM IF-ELSE"); :}
+	| IF expr_log cmd PVIR {: System.out.println("FIM IF"); :}
+	| IF expr_log cmd ELSE cmd PVIR {: System.out.println("FIM IF-ELSE"); :}
+	| IF expr_log bloco ELSE cmd PVIR {: System.out.println("FIM IF-ELSE"); :}
+	| IF expr_log cmd ELSE bloco PVIR {: System.out.println("FIM IF-ELSE"); :}
+;
+
+//Define derivação do WHILE
+decl_while ::= WHILE expr_log bloco PVIR {: System.out.println("FIM WHILE"); :}
+	| WHILE expr_log cmd PVIR {: System.out.println("FIM WHILE"); :};
+
+//Define derivação de expressão lógica
+expr_log ::= APAR expr FPAR {: System.out.println("EXPRESSAO"); :};
+
+//Define derivação de expressão lógica composta
+expr ::= NOT expr_simples op_log expr | NOT expr_simples
+	| expr_simples op_log expr | expr_simples
+	| STRING IGUALI STRING
+	| STRING IGUALI IDEN
+	| expr_simples IGUALI STRING
+;
+
+//Define derivação de uma expressão lógica simples
+expr_simples ::= expr_simples op_log_num tipo | tipo ;
+
+//Define operadores para uma expressão
+op_log ::= AND | OR ;
+
+//Define operadores para expressão lógica entre números
+op_log_num ::= IGUALI | DIFE | MAIORQ | MENORQ | MAIOR | MENOR ;
+
+//Define tipo de comando
+cmd ::= atr | io ;
+
+//Define comando de atribuição
+atr ::= IDEN IGUAL calc;
+
+//Define calculos
+calc ::= tipo op_arit calc | tipo | STRING MAIS calc | STRING;
+
+//Define valores encontrados
+tipo ::= IDEN | INT | BOOLEAN;
+
+//Define operações aritimeticas
+op_arit ::= MAIS | MENOS | MULT | DIV ;
+
+//Define entrada e saída
+io ::= READLN VIRG IDEN {: System.out.println("READLN"); :}
+	| WRITE VIRG list_exp {: System.out.println("WRITE"); :}
+	| WRITELN VIRG list_exp {: System.out.println("WRITELN"); :}
+;
+
+//Define lista para saída
+list_exp ::= calc VIRG list_exp | calc
+;
+
