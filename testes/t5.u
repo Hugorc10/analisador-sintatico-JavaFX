@@ -1,0 +1,10 @@
+begin
+  {---------- Declaração de variáveis ---------}
+  int i;
+  i = 0;
+/*******************Programa conta ate mil*********************/
+while (i <= 1000) begin
+    writeln, i;
+    i = i + 1;
+  end;
+end.

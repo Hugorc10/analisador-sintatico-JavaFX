@@ -1,2 +1,2 @@
-# analisador-lexico
-Analisador lexico com JFlex feito em Java
+# analisador-lexico-sintatico
+Analisador lexico e sintático em Java
