@@ -2,6 +2,7 @@
 
 package analisador;
 
+import componentes.sym;
 import java_cup.runtime.Scanner;
 import java_cup.runtime.Symbol;
 
@@ -12,7 +13,7 @@ import java_cup.runtime.Symbol;
  * on 22/05/14 19:29 from the specification file
  * <tt>lexer.flex</tt>
  */
-public class Lexer2 implements Scanner {
+public class LexerParser implements Scanner {
 
   /** This character denotes the end of file */
   public static final int YYEOF = -1;
@@ -327,7 +328,7 @@ public class Lexer2 implements Scanner {
    *
    * @param   in  the java.io.Reader to read input from.
    */
-  public Lexer2(java.io.Reader in) {
+  public LexerParser(java.io.Reader in) {
     this.zzReader = in;
   }
 
@@ -337,7 +338,7 @@ public class Lexer2 implements Scanner {
    *
    * @param   in  the java.io.Inputstream to read input from.
    */
-  Lexer2(java.io.InputStream in) {
+  LexerParser(java.io.InputStream in) {
     this(new java.io.InputStreamReader(in));
   }
 

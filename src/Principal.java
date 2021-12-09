@@ -10,9 +10,9 @@ public class Principal extends Application {
     }
     
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         ScreenView view = new ScreenView();
-        Scene scene = new Scene(view.createPane(), 850, 900);
+        Scene scene = new Scene(view.createPane(), 850, 1000);
     
         // seta o titulo da janela
         primaryStage.setTitle("Analisador Sintatico");

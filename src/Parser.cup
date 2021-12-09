@@ -97,10 +97,12 @@ decl_if ::= IF expr_log bloco PVIR {: System.out.println("FIM IF"); :}
 
 //Define derivação do WHILE
 decl_while ::= WHILE expr_log bloco PVIR {: System.out.println("FIM WHILE"); :}
-	| WHILE expr_log cmd PVIR {: System.out.println("FIM WHILE"); :};
+	| WHILE expr_log cmd PVIR {: System.out.println("FIM WHILE"); :}
+;
 
 //Define derivação de expressão lógica
-expr_log ::= APAR expr FPAR {: System.out.println("EXPRESSAO"); :};
+expr_log ::= APAR expr FPAR {: System.out.println("EXPRESSAO"); :}
+;
 
 //Define derivação de expressão lógica composta
 expr ::= NOT expr_simples op_log expr | NOT expr_simples
@@ -111,13 +113,13 @@ expr ::= NOT expr_simples op_log expr | NOT expr_simples
 ;
 
 //Define derivação de uma expressão lógica simples
-expr_simples ::= expr_simples op_log_num tipo | tipo ;
+expr_simples ::= expr_simples op_log_num tipo | tipo;
 
 //Define operadores para uma expressão
-op_log ::= AND | OR ;
+op_log ::= AND | OR;
 
 //Define operadores para expressão lógica entre números
-op_log_num ::= IGUALI | DIFE | MAIORQ | MENORQ | MAIOR | MENOR ;
+op_log_num ::= IGUALI | DIFE | MAIORQ | MENORQ | MAIOR | MENOR;
 
 //Define tipo de comando
 cmd ::= atr | io ;
@@ -132,7 +134,7 @@ calc ::= tipo op_arit calc | tipo | STRING MAIS calc | STRING;
 tipo ::= IDEN | INT | BOOLEAN;
 
 //Define operações aritimeticas
-op_arit ::= MAIS | MENOS | MULT | DIV ;
+op_arit ::= MAIS | MENOS | MULT | DIV;
 
 //Define entrada e saída
 io ::= READLN VIRG IDEN {: System.out.println("READLN"); :}

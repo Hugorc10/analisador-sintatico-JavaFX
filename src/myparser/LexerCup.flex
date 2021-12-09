@@ -4,7 +4,7 @@ import java_cup.runtime.*;
 
 %%
 
-%class analisador.Lexer2
+%class analisador.LexerParser
 %line
 %column
 %cup

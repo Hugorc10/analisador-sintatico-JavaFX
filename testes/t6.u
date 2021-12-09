@@ -4,8 +4,8 @@ begin
   boolean aprovado = false;
   int soma;
   soma = nota1 + nota2 + nota3;
-  if (soma >= "a"
-  /* if (soma >= 7) */
+  if (soma >= "a")
      writeln,"Aprovado"
- else writeln, "Reprovado";
+ else
+    writeln, "Reprovado";
 end.

@@ -297,7 +297,7 @@ public class parser extends java_cup.runtime.lr_parser {
 		return new SrcLoc(token.left, token.right, source_filename);
 	}
    
-   public parser(Lexer2 mylexer, String fname)
+   public parser(LexerParser mylexer, String fname)
    {
     super(mylexer);
    	source_filename = fname;

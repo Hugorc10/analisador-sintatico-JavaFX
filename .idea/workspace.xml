@@ -5,65 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75cd8499-6092-4391-87fa-809b07f3ae78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_cup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_cup_11a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jflex_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Analisador-Lexico.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Grammar.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/KeywordsAndSymbols.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser.cup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analisador/LEXSymbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analisador/Lexer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analisador/SrcLoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analisador/parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/analisador/sym.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/ScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java-cup-11a.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java_cup.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jflex-1.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lexer/GeneratorLexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myparser/LexerCup.flex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t1.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t10.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t2.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t3.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t4.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t5.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t6.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t7.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t8.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/t9.u" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/teste.u" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JFlex.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_cup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/java_cup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_cup_11a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/java_cup_11a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jflex_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jflex_1_6_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnalisadorLexico.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AnalisadorLexico.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automato.jff" beforeDir="false" afterPath="$PROJECT_DIR$/src/Automato.jff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutomatoJPEG.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomatoJPEG.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutomatoPNG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutomatoPNG.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisador/Lexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automato-simples.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/automato-simples.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componentes/Tokens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/Tokens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ScreenController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/leitor/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leitor/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexer/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myparser/GeneratorParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexer/Lexer.flex" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/Lexer.flex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/teste1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testesantigos/teste1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/teste2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testesantigos/teste2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/teste3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testesantigos/teste3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/teste4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testesantigos/teste4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/teste5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testesantigos/teste5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/ScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ScreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisador-Lexico.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Analisador-Sintatico-JavaFX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnalisadorLexico.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser.cup" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analisador/Lexer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analisador/LexerParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analisador/SrcLoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analisador/SrcLoc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analisador/parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analisador/parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analisador/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentes/sym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ErrorHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leitor/FileHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myparser/LexerCup.flex" beforeDir="false" afterPath="$PROJECT_DIR$/src/myparser/LexerCup.flex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ScreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/t6.u" beforeDir="false" afterPath="$PROJECT_DIR$/testes/t6.u" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesantigos/teste1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesantigos/teste2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesantigos/teste3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesantigos/teste4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesantigos/teste5.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,15 +67,28 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.21034078" />
+    <property name="project.structure.side.proportion" value="0.1957869" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="RunManager">
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Principal" />
-      <module name="Analisador-Lexico" />
+      <module name="Analisador-Sintatico-JavaFX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Analisador-Sintatico-JavaFX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Analisador-Sintatico-JavaFX" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +114,10 @@
       <workItem from="1638296012322" duration="355000" />
       <workItem from="1638296445446" duration="880000" />
       <workItem from="1638297490974" duration="285000" />
-      <workItem from="1638297817201" duration="1425000" />
+      <workItem from="1638297817201" duration="6350000" />
+      <workItem from="1638397752130" duration="21000" />
+      <workItem from="1638398122850" duration="4577000" />
+      <workItem from="1639034151504" duration="343000" />
     </task>
     <servers />
   </component>
